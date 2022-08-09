@@ -1,0 +1,45 @@
+.cabecalho {
+  grid-area: header;
+  background-color: #0b6ebf;
+  color: #afcbe1;
+}
+.menu {
+  grid-area: menu;
+  background-color: #afcbe1;
+  color: #061520;
+  width: 100%;
+  height: 100%;
+}
+.conteudo {
+  grid-area: main;
+  background-color: #192937;
+  color: #afcbe1;
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  grid-area: footer;
+  background-color: #160836;
+  color: #afcbe1;
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "footer footer footer footer footer footer";
+  padding: 0px;
+}
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 110px 0;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
